@@ -84,14 +84,15 @@ body {
     margin-top: 1rem;
 }
 
-.header hr {
-    border: none;
+.hr {
+    /* border: none; */
     height: 0.2px;
     width: 30rem;
-    float: center;
+    /* float: center; */
     margin-left: 7.5rem;
     margin-top: 1rem;
-    background-color: rgb(240, 231, 231);
+    /* background-color: rgb(240, 231, 231); */
+    border-bottom: 1px solid rgb(240, 231, 231);
 }
 
 .body {
