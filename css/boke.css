@@ -1,0 +1,186 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid red; */
+        background-color: pink;
+        z-index: -10;
+    }
+    
+    .left_box {
+        position: fixed;
+        /* width: 17rem; */
+        width: 18%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* background-color: rgb(114, 112, 112); */
+        border-right: 1px solid rgb(131, 131, 131);
+    }
+    
+    .info_box {
+        position: absolute;
+        height: 18rem;
+        width: 15rem;
+        top: 0.85rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        background-color: #fff;
+        border-radius: 25px;
+    }
+    
+    .head_box {
+        position: absolute;
+        height: 8rem;
+        width: 8rem;
+        top: 2rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        /* background-color: black; */
+        border-radius: 50%;
+        background-image: url(../images/tx.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .info_box>h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        color: rgb(131, 131, 131);
+        text-align: center;
+        /* border: solid 1px red; */
+        margin-top: 11rem;
+    }
+    
+    .hr {
+        position: absolute;
+        width: 14rem;
+        height: 1rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        border-bottom: 0.2px solid rgb(131, 131, 131);
+    }
+    
+    .info_box>p {
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(131, 131, 131);
+        text-align: center;
+        /* border: solid 1px red; */
+        font-size: 12px;
+        margin-top: 2rem;
+    }
+    
+    .count_box {
+        position: absolute;
+        height: 5rem;
+        width: 15rem;
+        top: 20rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        /* border: 1px solid red; */
+        background-color: #fff;
+        border-radius: 20px;
+        /* overflow: hidden; */
+    }
+    
+    .count_child {
+        width: 5rem;
+        height: 5rem;
+        float: left;
+        /* border-radius: 15px; */
+        /* border: 0.01px solid red; */
+        /* box-sizing: border-box; */
+    }
+    
+    .count_child>h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+        color: rgb(97, 86, 86);
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .count_child>p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        color: rgb(131, 131, 131);
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    
+    .count_child:hover {
+        border-bottom-width: 3px;
+        border-bottom: 2px solid black;
+    }
+    /* .count_child:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 1px;
+        border-bottom: 1px dashed #888888;
+        box-sizing: border-box;
+    } */
+    
+    .right_box {
+        float: right;
+        width: 82%;
+        height: 100%;
+        /* border: 2px solid red; */
+        box-sizing: border-box;
+    }
+    
+    .metu_box {
+        position: absolute;
+        width: 6rem;
+        height: 7.5rem;
+        top: 26rem;
+        right: 0;
+        /* border: 1px solid red; */
+    }
+    
+    .metu_box>a {
+        /* display: block; */
+        text-decoration: none;
+        width: 6rem;
+        height: 2.5rem;
+        /* background-color: #fff; */
+        /* border-radius: 15px; */
+        float: left;
+        text-align: center;
+        line-height: 2.5rem;
+        color: rgb(131, 131, 131);
+        /* border-bottom: 1px solid rgb(131, 131, 131); */
+    }
+    
+    .tsb {
+        position: absolute;
+        width: 15rem;
+        height: 10rem;
+        top: 35rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+        /* border: 1px solid red; */
+        border-radius: 15px;
+        background-color: #fff;
+    }
+    
+    .right_box>span {
+        font-size: 35px;
+        position: absolute;
+        top: 15%;
+        left: 58%;
+        color: rgb(131, 131, 131);
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+    }

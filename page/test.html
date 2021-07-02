@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: green;
+        }
+        
+        .box {
+            width: 360px;
+            height: 150px;
+            background-color: white;
+            border-radius: 25px;
+            position: relative;
+            border: 1px solid red;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        
+        .inner {
+            width: 360px;
+            height: 150px;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+        }
+        
+        .inner>div {
+            -webkit-box-flex: 1;
+            box-sizing: border-box;
+            padding-top: 20px;
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+        
+        .inner>div span {
+            display: block;
+            /* position: absolute; */
+            /* bottom: 10px; */
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+        
+        .inner>div:hover span {
+            border-bottom: 3px solid rgb(223, 33, 33);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="inner">
+            <div>0
+                <span>Archives</span>
+            </div>
+            <div>0
+                <span>Categories</span>
+            </div>
+            <div>0
+                <span>Tags</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
