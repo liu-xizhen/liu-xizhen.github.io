@@ -31,6 +31,7 @@ body {
     /* border: 1px solid red; */
     box-sizing: border-box;
     animation: hrjx 1s linear;
+    -webkit-animation: hrjx_pg 1s linear;
 }
 
 .header {
@@ -172,6 +173,32 @@ body {
 /* 滑入渐显特效 */
 
 @keyframes hrjx {
+    0% {
+        top: 70%;
+        opacity: 0;
+    }
+    25% {
+        top: 65%;
+        opacity: 0.25;
+    }
+    50% {
+        top: 60%;
+        opacity: 0.5;
+    }
+    75% {
+        top: 55%;
+        opacity: 0.75;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+
+/* 苹果兼容动画 */
+
+@-webkit-keyframes hrjx_pg {
     0% {
         top: 70%;
         opacity: 0;

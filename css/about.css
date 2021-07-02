@@ -40,10 +40,13 @@ body {
 
 .main {
     width: 1150px;
-    height: 600px;
+    height: 1000px;
     margin-top: -165px;
     margin-left: 185px;
-    background-color: white;
+    /* background-color: white; */
     border: 1px solid #00000025;
     border-radius: 15px;
+    background-image: url(../images/简历.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
