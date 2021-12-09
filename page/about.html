@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>About me</title>
     <link rel="stylesheet" href="../css/about.css">
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -12,44 +13,16 @@
         <div class="top">
             <div class="top-text">
                 <h2>刘席珍</h2>
+                <!-- <img src="../images/liuxizhen.png" alt="liuxizhen"> -->
                 <p>刘席珍，2001年4月30日出生于江西省赣州市赣县区，毕业于九江职业技术学院。本人性格内外结合,适应能力强，为人诚实，有良好的人际交往能力，具备相关的专业知识和认真、细心、耐心的工作态度及良好的职业道德修养。相信团体精神的我对工作认真负责，总希望能把事情做得更好!性格开朗，对生活充满希望，对工作充满热情!能在短期间内适应新环境，有强烈的品质意识;对工作认真负责，上进心强... <a href="#">>>></a></p>
                 <hr width="600" size="1">
             </div>
         </div>
     </div>
-    <div class="main"></div>
+    <div class="main">
+        <div class="touxiang"></div>
+    </div>
 </body>
-<script>
-    var body = document.getElementsByTagName('body')[0];
-    // var textArr = ["乐观", "❤", "积极", "向上", "自由", "正能量", "(*^▽^*)", "元气满满", "开心", "快乐", "善良", "可爱", "暴富", "暴瘦"];
-    var textArr = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善", "❤", "★"];
-    document.addEventListener('click', (e) => {
-        // 生成字符串
-        var ev = e || window.event;
-        var baseX = ev.pageX;
-        var baseY = ev.pageY;
-        var new_span = document.createElement('span');
-        new_span.innerText = textArr[parseInt(Math.random() * textArr.length)]
-        new_span.style.position = 'fixed';
-        new_span.style.left = baseX - 10 + 'px';
-        new_span.style.top = baseY + 'px';
-        // new_span.style.color = 'RGB(' + parseInt(Math.random() * 255) + ',' + parseInt(Math.random() * 255) + ',' + parseInt(Math.random() * 255) + ')';
-        new_span.style.color = 'red';
-        body.appendChild(new_span);
-        // 定时器1实现字符串上升效果
-        var timer = window.setInterval(() => {
-            new_span.style.top = parseInt(window.getComputedStyle(new_span, null)['top']) - 2 + 'px';
-            // console.log(window.getComputedStyle(new_span,null)['fontSize']);
-            //new_span.style.opacity = window.getComputedStyle(new_span, null)['opacity'] - 0.01;
-            //逐渐淡出效果
 
-        }, 30);
-        // 定时器2实现字符串消失
-        window.setTimeout(() => {
-            window.clearInterval(timer);
-            body.removeChild(new_span);
-        }, 1000);
-    }, false);
-</script>
 
 </html>
